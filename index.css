@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Lexend+Deca:wght@100&display=swap');
+
+
+*{
+ font-family: 'Lexend Deca', sans-serif;
+ font-weight: 400;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    background-color: hsl(0, 0%, 95%);
+}
+
+
+.main{
+    width: 70%;
+    margin:5% auto ;
+    margin-top: 7%;
+}
+
+.row{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    border-radius: 10px;
+    flex-wrap: nowrap;
+}
+.col{
+    width: 33%;
+    height: auto;
+    color: white;
+    padding: 2% 4%;
+}
+.col h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 55px;
+    word-spacing: 10px;
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius:10px 0 0 10px ;
+}
+.sedans .learn-more {
+    color: hsl(31, 77%, 52%);
+}
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+.suv .learn-more {
+    color: hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+.luxury .learn-more{
+    color: hsl(179, 100%, 13%);
+}
+.learn-more{
+    border: none;
+    border-radius: 30px;
+    padding:5% 2%;
+    margin-top: 3%;
+    min-width:120px;
+    text-align: center;
+    background: white;
+    font-weight: 700;
+    transition: all ease 0.4s;
+    cursor: pointer;
+}
+.learn-more:hover{
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+/* Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%) */
+
+@media screen and (max-width:768px){
+    .row{
+        display: block;
+    }
+    .col{
+        width: 90%;
+        padding: 4% 10%;
+    }
+    .sedans{
+        border-radius:10px 10px 0 0;
+    }
+    .luxury{
+        border-radius: 0 0 10px 10px;
+    }
+}
